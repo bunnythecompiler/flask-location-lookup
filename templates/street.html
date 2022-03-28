@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% block content %}
+    <div class="street-title">
+        <H1>Search by street name</H1>
+    </div>
+    <div class="street-form">
+        <form method="POST">
+            street name <input type="text" name="street">
+            <button type="submit" class="street-button">Submit</button>
+        </form>
+    </div>
+    <div class="results">
+            <h1>latitude : {{ latitude }}</h1>
+            <h1>longitude : {{ longitude }}</h1>
+    </div>
+{% endblock%}

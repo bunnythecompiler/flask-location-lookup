@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flask location app</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="../static/images/logo.png" alt="site logo">
+            </div>
+            <ul>
+                <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{  url_for('street') }}">Street</a></li>
+                <li><a href="{{ url_for('coord') }}">Coordinates</a></li>
+            </ul>
+
+        </div>
+        {% block content %}
+        {% endblock %}
+    </header>
+    
+</body>
+</html>

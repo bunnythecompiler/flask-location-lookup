@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+{% block content %}
+    <div class="home-page">
+        <h1>Welcome to the home page</h1>
+
+    </div>
+    <div class="button">
+        <a href="{{ url_for('coord')}}" class="btn">Coords</a>
+        <a href="{{ url_for('street')}}" class="btn">Street</a>
+    </div>
+{% endblock%}
